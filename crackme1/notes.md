@@ -18,6 +18,6 @@ The below code is what determines the value of cal_val and cor_val
 
 The first 'if( )' block just XOR's each character in the name string with **'G'** (0x47 is the ASCII value of the character G)
 
-The second block also XOR's each character in the name string with **'B'** 
+The second block also XOR's each character in the password string with **'B'** 
 
 So my solution for this is just use `Name` as G and `password` as B and it works!
