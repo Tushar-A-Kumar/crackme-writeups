@@ -22,4 +22,4 @@ The second block also XOR's each character in the password string with **'B'**
 
 So my solution for this is just use `Name` as G and `password` as B and it works!
 
-> Also the decompiled result is hundreds of lines of code , so use the System tree section to move around only necessary functions more efficiently.
+> Also the decompiled result is hundreds of lines of code , so use the System tree section to move around between the necessary functions more efficiently.
