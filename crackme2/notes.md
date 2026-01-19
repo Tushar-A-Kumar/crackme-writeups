@@ -15,11 +15,11 @@ Rather we will take a slight shortcut, into the assembler section.
 
 We can see the CALL , which is calling external fn strcmp. Next we have TEST , then the important **JZ , which is "jump if zero"**.
 
-Comparing decompiled code with assembler section , we can understand TEST is like if statement . If the condition is true it returns 1 else 0. So we will replace JZ with **JE , which is "jump if equal"**.
+Comparing decompiled code with assembler section , we can understand TEST is like if statement . If the condition is true CPU flags are set to 1 , else 0. So we will replace JZ with **JE , which is "jump if equal"**.
 
 Right-click on JZ and select "patch instruction"
 
-Now it changes code so that everytime condtion was false we got "you lose" to only time both values ( ivar1 , 0) are equal , we would get "you lose"
+Now we changed the jump condition itself , so that program fails only when flag is 0 , that is, only if comparision in strcmp succeded.
 
 And every other scenario , every other string other than the original password , will crack this exe!
 
