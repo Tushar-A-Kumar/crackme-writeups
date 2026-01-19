@@ -15,7 +15,7 @@ Rather we will take a slight shortcut, into the assembler section.
 
 We can see the CALL , which is calling external fn strcmp. Next we have TEST , then the important **JZ , which is "jump if zero"**.
 
-Comparing decompiled code with assembler section , we can understand TEST is like if statement . If the condition is true CPU flags are set to 1 , else 0. So we will replace JZ with **JE , which is "jump if equal"**.
+Comparing decompiled code with assembler section , we can understand TEST is like if statement . If the condition is true CPU flags are set to 1 , else 0. So we will replace JZ with JNZ
 
 Right-click on JZ and select "patch instruction"
 
